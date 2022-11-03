@@ -1,34 +1,35 @@
 {
-	"name": "@hexlet/code",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"type": "module",
-	"bin": {
-		"brain-games": "bin/brain-games.js",
-		"brain-even": "bin/brain-even.js",
-		"brain-calc": "bin/brain-calc.js"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Azizov26/frontend-project-lvl1.git"
-	},
-	"author": "Aziz",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Azizov26/frontend-project-lvl1/issues"
-	},
-	"homepage": "https://github.com/Azizov26/frontend-project-lvl1#readme",
-	"dependencies": {
-		"readline-sync": "^1.4.10"
-	},
-	"devDependencies": {
-		"eslint": "^8.26.0",
-		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-plugin-import": "^2.26.0",
-		"prettier": "2.7.1"
-	}
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js."
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azizov26/frontend-project-lvl1.git"
+  },
+  "author": "Aziz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azizov26/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Azizov26/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "2.7.1"
+  }
 }
