@@ -1,21 +1,34 @@
-import readlineSync from 'readline-sync';
+import getGames from '../index.js';
+import getRandom from '../randomizer.js';
 
-const calcUsers = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello ${userName}!`);
-  console.log('What is the result of the expression?');
+const gameRules = 'What is the result of the expression?';
 
-  const numberOne = Math.floor(Math.random() * 20);
-  const numberTwo = Math.floor(Math.random() * 20);
+const mathematicalSymbols = ['+', '-', '*'];
 
-  console.log(`Question: ${numberOne} + ${numberTwo}`);
-  const answerUser = readlineSync.question('Your answer: ');
+const mathematicalSolution = (numberOne, operator, numberTwo) => {
+  switch (operator) {
+    case '+':
+      return numberOne + numberTwo;
 
-  const answerAdmin = numberTwo + numberOne === answerUser
-    ? console.log('Correct!')
-    : console.log(`${answerUser} is wrong answer ;(. Correct answer was ${numberOne + numberTwo}. Let's try again ${userName}!`);
+    case '-':
+      return numberOne - numberTwo;
 
-  return answerAdmin;
+    case '*':
+      return numberOne * numberTwo;
+
+    default:
+      return null;
+  }
 };
-export default calcUsers;
+
+const getCanculatorLogic = () => {
+  const numberOne = getRandom(1, 20);
+  const numberTwo = getRandom(1, 20);
+  const RandomOperator = mathematicalSymbols[getRandom(0, mathematicalSymbols.length - 1)];
+  const question = `${numberOne} ${RandomOperator} ${numberTwo}`;
+  const correctAnswer = `${mathematicalSolution(numberOne, RandomOperator, numberTwo)}`;
+
+  return [question, correctAnswer];
+};
+const calcGame = getGames(gameRules, getCanculatorLogic);
+export default calcGame;

@@ -6,7 +6,7 @@
 	"type": "module",
 	"bin": {
 		"brain-games": "bin/brain-games.js",
-    	"brain-even": "bin/brain-even.js",
+		"brain-even": "bin/brain-even.js",
 		"brain-calc": "bin/brain-calc.js"
 	},
 	"scripts": {
@@ -28,6 +28,7 @@
 	"devDependencies": {
 		"eslint": "^8.26.0",
 		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-plugin-import": "^2.26.0"
+		"eslint-plugin-import": "^2.26.0",
+		"prettier": "2.7.1"
 	}
 }

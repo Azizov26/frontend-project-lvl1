@@ -1,6 +1,4 @@
-import calcGame from '../src/games/brain-calc';
+#!/usr/bin/env node
+import calcGame from '../src/games/brain-calc.js';
 
-const brainCalc = () => {
-  calcGame();
-};
-brainCalc();
+export default () => calcGame();
