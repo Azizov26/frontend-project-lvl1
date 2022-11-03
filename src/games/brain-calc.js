@@ -30,5 +30,5 @@ const getCanculatorLogic = () => {
 
   return [question, correctAnswer];
 };
-const calcGame = getGames(gameRules, getCanculatorLogic);
-export default calcGame;
+const brainCalcGame = getGames(gameRules, getCanculatorLogic);
+export default brainCalcGame;
