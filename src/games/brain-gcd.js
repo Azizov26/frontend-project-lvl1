@@ -12,10 +12,10 @@ const nod = (numOne, numTwo) => {
 };
 
 const gameGCD = () => {
-  const numberOne = getRandom(1, 20);
-  const numberTwo = getRandom(1, 20);
+  const numberOne = getRandom(1, 30);
+  const numberTwo = getRandom(1, 30);
   const question = `${numberOne} ${numberTwo}`;
-  const correctAnswer = nod(numberOne, numberTwo);
+  const correctAnswer = `${nod(numberOne, numberTwo)}`;
   return [question, correctAnswer];
 };
 
